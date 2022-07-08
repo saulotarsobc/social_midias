@@ -11,15 +11,7 @@ function getLinks() {
     }).then(function (res) {
         return res.json();
     }).then(function (json) {
-        console.log(json);
-
-        /* json.forEach(el => {
-            console.log(el.link);
-        }); */
-
-
         link_list.innerHTML = '';
-
         json.forEach(link => {
             link_list.innerHTML += `<a href="${link.link}" target="_blank" rel="">
             <li class="link">
@@ -30,8 +22,6 @@ function getLinks() {
             </li>
         </a>`
         });
-
-
     });
 }
 
