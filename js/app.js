@@ -2,8 +2,7 @@ const link_list = document.querySelector('#link_list');
 
 function getLinks() {
     const form = new FormData();
-    form.append('name', 'linuxize');
-    form.append('email', 'linuxize@example.com');
+    // form.append('name', 'linuxize'); //exemplo de dados via post
 
     fetch('./php/index.php', {
         method: 'POST',

@@ -18,23 +18,24 @@
                 margin: 30px 30px 10px 30px;
             }
             #title {
-                background-color: rgba(0, 0, 0, 0.486);
-                color: white;
+                // background-color: rgba(0, 0, 0, 0.486);
+                background-color: #b80606;
+                color: #ffffff;
                 padding: 5px 20px;
                 border-radius: 8px;
                 margin-bottom: 30px;
                 font-size: 22px;
             }
             #links {
-                width: 100vw;
-                /*  */
+                // width: 100vw;
                 #link_list {
                     a {
                         display: flex;
                         flex-direction: column;
                         align-items: center;
                         .link {
-                            background-color: rgba(0, 0, 0, 0.837);
+                            // background-color: rgba(0, 0, 0, 0.837);
+                            background-color: #b80606d5;
                             color: white;
                             width: 330px;
                             padding: 5px 5px;
@@ -42,11 +43,13 @@
                             margin: 5px;
                             transition: all 0.1s ease-in-out;
                             text-align: center;
+                            font-weight: bold;
                             &:hover {
-                                background-color: rgba(0, 0, 0, 0.932);
+                                // background-color: rgba(0, 0, 0, 0.932);
+                                background-color: #b70606ee;
                                 transform: scale(1.06);
                                 padding: 5px 15px;
-                                // font-weight: 300;
+                                color: rgb(218, 218, 218);
                             }
                             /* .icon {
                                 //
