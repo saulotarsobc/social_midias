@@ -22,8 +22,8 @@
 
                 <div id="links">
 
-                    <ul>
-                        <a href="https://wa.me/5593991716663" target="_blank" rel="">
+                    <ol id="link_list">
+                        <!-- <a href="https://wa.me/5593991716663" target="_blank" rel="">
                             <li class="link">
                                 <img class="icon" src="" alt="">
                                 <span class="link_title">
@@ -87,8 +87,8 @@
                                     YOUTUBE PROVEDOR CONECT
                                 </span>
                             </li>
-                        </a>
-                    </ul>
+                        </a> -->
+                    </ol>
 
                 </div>
 
