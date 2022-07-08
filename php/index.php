@@ -8,7 +8,7 @@ $liks = array(
         'type' => 'link',
     ),
     array(
-        'title' => 'INTERNET EM ICOARACI - BELÉM',
+        'title' => 'INTERNET EM ICOARACI',
         'link' => 'https://wa.me/5591989952373',
         'icon' => '',
         'type' => 'link',
