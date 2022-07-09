@@ -4,7 +4,7 @@ const avatar = document.querySelector('#avatar');
 const home = document.querySelector('#home');
 const title = document.querySelector('#title');
 
-const debug = false;
+const debug = true;
 
 f_debug(window.location);
 f_debug('search:', window.location.search);
