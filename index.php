@@ -22,9 +22,11 @@
         <main>
             <div id="card">
 
-                <img id="avatar" src="./img/avatar.jpeg" alt="avatar">
+                <img id="avatar" src="" alt="avatar">
 
-                <div id="title">Provedor Conect</div>
+                <div id="title">
+                    <!-- titulo aqui! -->
+                </div>
 
                 <div id="links">
 

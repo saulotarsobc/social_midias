@@ -1,10 +1,15 @@
 <?php
 header('Content-Type:application/json');
 $liks = array(
+    'title' => 'Provedor Conect',
+    'avatar' => 'avatar.jpeg',
+    'background' => 'background.jpg',
+
     'colors' => array(
         'primary' => '#b80606',
         'secondary' => '#b80606d5',
     ),
+
     'list' => array(
 
         array(
