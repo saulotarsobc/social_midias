@@ -40,10 +40,12 @@ function getDefinitons() {
         //colors
         title.style.backgroundColor = definitions.colors.primary;
 
+        //itens
         const link_iten = document.querySelectorAll('.link_iten');
         link_iten.forEach(element => {
-            // console.log(element);
+            //hover
             element.style.backgroundColor = definitions.colors.secondary;
+
             element.addEventListener('mouseover', function () {
                 // console.log(123)
                 element.style.backgroundColor = definitions.colors.primary;
