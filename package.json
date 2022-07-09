@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass -w scss/main.scss css/main.css -s compressed"
+    "sass": "sass -w scss/main.scss css/main.css -s compressed",
+    "gitp": "git add . && git commit -m ':fire:' && git push --all"
   },
   "repository": {
     "type": "git",
