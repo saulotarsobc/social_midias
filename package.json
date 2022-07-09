@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "sass": "sass -w scss/main.scss css/main.css -s compressed",
-    "gitp": "git add . && git commit -m \":fire: $msg\" && git push --all"
+    "gitp": "git add . && git commit -m",
+    "postgit": "git push --all"
   },
   "repository": {
     "type": "git",
