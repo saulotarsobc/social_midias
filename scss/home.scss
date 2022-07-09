@@ -19,7 +19,7 @@
                 border-radius: 50%;
             }
             #title {
-                // background-color: #b80606; //js
+                background-color: #ffffff; //js
                 color: #ffffff;
                 padding: 5px 20px;
                 border-radius: 8px;
@@ -33,7 +33,7 @@
                         flex-direction: column;
                         align-items: center;
                         .link_iten {
-                            // background-color: #b80606d5; //js
+                            background-color: #ffffff; //js
                             color: white;
                             width: 330px;
                             padding: 5px 5px;
@@ -43,7 +43,7 @@
                             text-align: center;
                             font-weight: bold;
                             &:hover {
-                                // background-color: #b80606;  //js
+                                background-color: #ffffff;  //js
                                 transform: scale(1.05);
                                 padding: 5px 10px;
                                 color: rgb(218, 218, 218);

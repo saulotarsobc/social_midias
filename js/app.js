@@ -16,10 +16,10 @@ function getDefinitons() {
     }).then(function (definitions) {
 
         //avatar
-        avatar.src = './img/' + definitions.avatar;
+        avatar.src = definitions.avatar;
 
         //background
-        home.style.backgroundImage = `url('./img/${definitions.background}')`;
+        home.style.backgroundImage = `url('${definitions.background}')`;
 
         //title
         title.innerHTML = definitions.title;
@@ -39,19 +39,21 @@ function getDefinitons() {
 
         //colors
         title.style.backgroundColor = definitions.colors.primary;
+        initParticles(definitions.colors.primary);
 
         //itens
         const link_iten = document.querySelectorAll('.link_iten');
         link_iten.forEach(element => {
-            //hover
+            //define cor dos itens
             element.style.backgroundColor = definitions.colors.secondary;
-
-            element.addEventListener('mouseover', function () {
-                // console.log(123)
+            
+            //hover
+            element.addEventListener('mouseover', () => {
                 element.style.backgroundColor = definitions.colors.primary;
             });
-            element.addEventListener('mouseout', function () {
-                // console.log(123)
+            
+            //hover
+            element.addEventListener('mouseout', () => {
                 element.style.backgroundColor = definitions.colors.secondary;
             });
         });
@@ -59,25 +61,23 @@ function getDefinitons() {
     });
 }
 
-getDefinitons();
 
-/* Check External Source: bvambient.js */
-document.addEventListener("DOMContentLoaded", function () {
-    var demo1 = new BVAmbient({
+function initParticles(color) {
+    var particles = new BVAmbient({
         selector: "#ambient",
         fps: 60,
         max_transition_speed: 25000,
-        min_transition_speed: 20000,
+        min_transition_speed: 15000,
         particle_number: 30,
         particle_maxwidth: 30,
         particle_minwidth: 10,
         particle_radius: 50,
         particle_opacity: true,
-        particle_colision_change: true,
-        particle_background: "#b80606",
+        particle_colision_change: false,
+        particle_background: color,
         particle_image: {
-            image: true,
-            src: "./img/avatar.jpeg"
+            image: false,
+            src: ""
         },
         responsive: [{
                 breakpoint: 768,
@@ -93,4 +93,9 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         ]
     });
+}
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    getDefinitons();
 });
