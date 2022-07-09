@@ -4,4 +4,4 @@
 ![banner](img/banner_entrefios.png)
 
 > Provedor Conect
-![banner](img/banner_conect.png.png)
+![banner](img/banner_conect.png)
