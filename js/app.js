@@ -1,6 +1,6 @@
 const link_list = document.querySelector('#link_list');
 
-function getLinks() {
+function getDefinitons() {
     const form = new FormData();
     // form.append('name', 'linuxize'); //exemplo de dados via post
 
@@ -10,9 +10,6 @@ function getLinks() {
     }).then(function (res) {
         return res.json();
     }).then(function (definitions) {
-
-        // console.log(definitions.list)
-
         link_list.innerHTML = '';
         definitions.list.forEach(link => {
             link_list.innerHTML += `<a href="${link.link}" target="_blank" rel="">
@@ -27,7 +24,7 @@ function getLinks() {
     });
 }
 
-getLinks();
+getDefinitons();
 
 /* Check External Source: bvambient.js */
 document.addEventListener("DOMContentLoaded", function () {

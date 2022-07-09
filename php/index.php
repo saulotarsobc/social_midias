@@ -2,8 +2,8 @@
 header('Content-Type:application/json');
 $liks = array(
     'colors' => array(
-        'primary' => '',
-        'secondary' => '',
+        'primary' => '#b80606',
+        'secondary' => '#b80606d5',
     ),
     'list' => array(
 
