@@ -9,9 +9,12 @@ function getLinks() {
         body: form
     }).then(function (res) {
         return res.json();
-    }).then(function (json) {
+    }).then(function (definitions) {
+
+        // console.log(definitions.list)
+
         link_list.innerHTML = '';
-        json.forEach(link => {
+        definitions.list.forEach(link => {
             link_list.innerHTML += `<a href="${link.link}" target="_blank" rel="">
             <li class="link">
                 <img class="icon" src="${link.icon}" alt="">
