@@ -93,7 +93,7 @@ function initParticles(color) {
         max_transition_speed: 25000,
         min_transition_speed: 15000,
         particle_number: 30,
-        particle_maxwidth: 100,
+        particle_maxwidth: 50,
         particle_minwidth: 30,
         particle_radius: 50,
         particle_opacity: true,
