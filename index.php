@@ -14,6 +14,10 @@
 
 <body>
 
+    <div id="ambient">
+        <!-- particulas -->
+    </div>
+
     <section id="home">
         <main>
             <div id="card">
@@ -49,6 +53,7 @@
         </main>
     </section>
 
+    <script src="js/bvambient.js"></script>
     <script src="./js/app.js"></script>
 
 </body>

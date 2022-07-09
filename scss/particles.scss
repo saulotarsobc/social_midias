@@ -1,0 +1,13 @@
+/* BVAmbient Style 
+https://codepen.io/BMSVieira/pen/OJRyJjq*/
+#ambient {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+.bvambient_particle {
+    position: absolute;
+    pointer-events: none;
+    transition: top linear, left linear;
+}
