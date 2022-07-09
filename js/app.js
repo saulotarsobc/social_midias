@@ -1,4 +1,5 @@
 const link_list = document.querySelector('#link_list');
+const favicon = document.querySelector('#favicon');
 const avatar = document.querySelector('#avatar');
 const home = document.querySelector('#home');
 const title = document.querySelector('#title');
@@ -14,6 +15,9 @@ function getDefinitons() {
     }).then(function (res) {
         return res.json();
     }).then(function (definitions) {
+
+        //favicon
+        favicon.href = definitions.avatar;
 
         //avatar
         avatar.src = definitions.avatar;
@@ -46,12 +50,12 @@ function getDefinitons() {
         link_iten.forEach(element => {
             //define cor dos itens
             element.style.backgroundColor = definitions.colors.secondary;
-            
+
             //hover
             element.addEventListener('mouseover', () => {
                 element.style.backgroundColor = definitions.colors.primary;
             });
-            
+
             //hover
             element.addEventListener('mouseout', () => {
                 element.style.backgroundColor = definitions.colors.secondary;

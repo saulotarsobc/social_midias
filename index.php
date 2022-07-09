@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#b80606">
-    <link rel="icon" type="image/x-icon" href="./img/avatar.jpeg">
+    <!-- <link rel="icon" type="image/x-icon" href="./img/avatar.jpeg"> -->
+    <link id="favicon" rel="shortcut icon" type="image/png" href="" />
     <title>Conect - Social Media</title>
     <link rel="stylesheet" href="./css/main.css">
 </head>
