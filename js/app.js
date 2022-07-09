@@ -65,7 +65,7 @@ function getDefinitons() {
 function initParticles(color) {
     var particles = new BVAmbient({
         selector: "#ambient",
-        fps: 60,
+        fps: 30,
         max_transition_speed: 25000,
         min_transition_speed: 15000,
         particle_number: 30,
