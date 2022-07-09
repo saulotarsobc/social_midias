@@ -7,6 +7,6 @@ $pathname = $_POST['pathname'];
 
 // die;
 
-$defintions = file_get_contents(".${pathname}.json");
+$defintions = file_get_contents("./${pathname}.json");
 
 echo $defintions;

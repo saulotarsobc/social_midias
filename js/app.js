@@ -4,11 +4,24 @@ const avatar = document.querySelector('#avatar');
 const home = document.querySelector('#home');
 const title = document.querySelector('#title');
 
-const debug = true;
+const debug = false;
+
+f_debug(window.location);
+f_debug('search:', window.location.search);
+f_debug('origin:', window.origin);
+f_debug('pathname:', window.location.pathname);
+f_debug('hostname:', window.location.hostname);
+f_debug('href:', window.location.href);
+f_debug('protocol:', window.location.protocol);
 
 function getDefinitons() {
     const form = new FormData();
-    form.append('pathname', window.location.pathname);
+
+    var pathname = window.location.href.split('?p=')[1];
+
+    f_debug('pathname:', pathname);
+
+    form.append('pathname', pathname);
 
     fetch('./php/index.php', {
         method: 'POST',
@@ -17,9 +30,7 @@ function getDefinitons() {
         return res.json();
     }).then(function (definitions) {
 
-        if (debug) {
-            console.log(definitions);
-        }
+        f_debug(definitions);
 
         //inicializar particulas
         initParticles(definitions.colors.primary);
@@ -44,12 +55,12 @@ function getDefinitons() {
         definitions.list.forEach(link => {
             link_list.innerHTML += `<a href="${link.link}" target="_blank" rel="">
             <li class="link_iten">
-                <img class="icon" src="${link.icon}">
-                <span class="link_title">
-                    ${link.title}
-                </span>
+            <img class="icon" src="${link.icon}">
+            <span class="link_title">
+            ${link.title}
+            </span>
             </li>
-        </a>`
+            </a>`
         });
 
         //colors
@@ -112,3 +123,9 @@ function initParticles(color) {
 document.addEventListener("DOMContentLoaded", () => {
     getDefinitons();
 });
+
+function f_debug(tit, param) {
+    if (debug){
+        console.log(tit, param);
+    }
+}
