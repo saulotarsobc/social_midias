@@ -31,8 +31,8 @@ document.addEventListener("DOMContentLoaded", function () {
     var demo1 = new BVAmbient({
         selector: "#ambient",
         fps: 60,
-        max_transition_speed: 12000,
-        min_transition_speed: 8000,
+        max_transition_speed: 25000,
+        min_transition_speed: 20000,
         particle_number: 30,
         particle_maxwidth: 60,
         particle_minwidth: 10,
