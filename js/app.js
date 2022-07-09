@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
         particle_background: "#b80606",
         particle_image: {
             image: true,
-            src: "./img/avatar.png"
+            src: "./img/avatar.jpeg"
         },
         responsive: [{
                 breakpoint: 768,

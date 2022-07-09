@@ -22,7 +22,7 @@
         <main>
             <div id="card">
 
-                <img id="avatar" src="./img/avatar.png" alt="avatar">
+                <img id="avatar" src="./img/avatar.jpeg" alt="avatar">
 
                 <div id="title">Provedor Conect</div>
 
