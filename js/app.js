@@ -41,8 +41,8 @@ document.addEventListener("DOMContentLoaded", function () {
         particle_colision_change: true,
         particle_background: "#b80606",
         particle_image: {
-            image: false,
-            src: ""
+            image: true,
+            src: "./img/avatar.png"
         },
         responsive: [{
                 breakpoint: 768,
