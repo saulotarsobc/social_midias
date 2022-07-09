@@ -17,7 +17,7 @@ f_debug('protocol:', window.location.protocol);
 function getDefinitons() {
     const form = new FormData();
 
-    var pathname = window.location.href.split('?p=')[1];
+    var pathname = window.location.pathname;
 
     f_debug('pathname:', pathname);
 
@@ -93,8 +93,8 @@ function initParticles(color) {
         max_transition_speed: 25000,
         min_transition_speed: 15000,
         particle_number: 30,
-        particle_maxwidth: 30,
-        particle_minwidth: 10,
+        particle_maxwidth: 100,
+        particle_minwidth: 30,
         particle_radius: 50,
         particle_opacity: true,
         particle_colision_change: false,
