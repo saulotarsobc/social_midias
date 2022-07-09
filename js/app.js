@@ -34,8 +34,8 @@ document.addEventListener("DOMContentLoaded", function () {
         max_transition_speed: 25000,
         min_transition_speed: 20000,
         particle_number: 30,
-        particle_maxwidth: 20,
-        particle_minwidth: 5,
+        particle_maxwidth: 30,
+        particle_minwidth: 10,
         particle_radius: 50,
         particle_opacity: true,
         particle_colision_change: true,
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
         responsive: [{
                 breakpoint: 768,
                 settings: {
-                    particle_number: "20"
+                    particle_number: "15"
                 }
             },
             {
