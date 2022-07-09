@@ -16,17 +16,23 @@ function getDefinitons() {
         return res.json();
     }).then(function (definitions) {
 
-        //favicon
-        favicon.href = definitions.avatar;
+        //inicializar particulas
+        initParticles(definitions.colors.primary);
 
-        //avatar
-        avatar.src = definitions.avatar;
+        //titulo da aba
+        document.title = definitions.title;
 
         //background
         home.style.backgroundImage = `url('${definitions.background}')`;
 
-        //title
+        //favicon
+        favicon.href = definitions.avatar;
+
+        //titulo da pagina 
         title.innerHTML = definitions.title;
+
+        //avatar
+        avatar.src = definitions.avatar;
 
         //list
         link_list.innerHTML = '';
@@ -43,7 +49,6 @@ function getDefinitons() {
 
         //colors
         title.style.backgroundColor = definitions.colors.primary;
-        initParticles(definitions.colors.primary);
 
         //itens
         const link_iten = document.querySelectorAll('.link_iten');
