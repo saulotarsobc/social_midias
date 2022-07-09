@@ -4,10 +4,11 @@ const avatar = document.querySelector('#avatar');
 const home = document.querySelector('#home');
 const title = document.querySelector('#title');
 
+const debug = true;
 
 function getDefinitons() {
     const form = new FormData();
-    // form.append('name', 'linuxize'); //exemplo de dados via post
+    form.append('pathname', window.location.pathname);
 
     fetch('./php/index.php', {
         method: 'POST',
@@ -15,6 +16,10 @@ function getDefinitons() {
     }).then(function (res) {
         return res.json();
     }).then(function (definitions) {
+
+        if (debug) {
+            console.log(definitions);
+        }
 
         //inicializar particulas
         initParticles(definitions.colors.primary);
@@ -66,7 +71,6 @@ function getDefinitons() {
                 element.style.backgroundColor = definitions.colors.secondary;
             });
         });
-
     });
 }
 
